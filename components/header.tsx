@@ -65,42 +65,40 @@ export function Header() {
             <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
               Accueil
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
-              À propos
+            <div className="group relative">
+              <button className="text-sm font-medium hover:text-primary transition-colors">Qui sommes nous</button>
+              <div className="absolute left-0 top-full mt-2 w-56 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                <Link href="/about/presentation" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Présentation de la marque
+                </Link>
+                <Link href="/about/histoire" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Histoire
+                </Link>
+                <Link href="/about/valeurs" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Valeurs
+                </Link>
+                <Link href="/about/expertises" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Expertises
+                </Link>
+                <Link href="/about/equipe" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Équipe
+                </Link>
+                <Link href="/about/chiffres" className="block px-4 py-2 text-sm hover:bg-accent">
+                  Agence en chiffres
+                </Link>
+              </div>
+            </div>
+            <Link href="/realisations" className="text-sm font-medium hover:text-primary transition-colors">
+              Réalisations
             </Link>
-            <div className="group relative">
-              <button className="text-sm font-medium hover:text-primary transition-colors">Carrelage</button>
-              <div className="absolute left-0 top-full mt-2 w-48 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <Link href="/products/mat" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Produits Mat
-                </Link>
-                <Link href="/products/marble" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Effet Marbre
-                </Link>
-                <Link href="/products/wood" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Effet Parquet
-                </Link>
-                <Link href="/products/pool" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Piscine & Terrasse
-                </Link>
-              </div>
-            </div>
-            <div className="group relative">
-              <button className="text-sm font-medium hover:text-primary transition-colors">Sanitaire</button>
-              <div className="absolute left-0 top-full mt-2 w-48 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <Link href="/sanitary/shower" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Receveur de Douche
-                </Link>
-                <Link href="/sanitary/bath" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Baignoires
-                </Link>
-                <Link href="/sanitary/sink" className="block px-4 py-2 text-sm hover:bg-accent">
-                  Lavabo
-                </Link>
-              </div>
-            </div>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Contact
+            <Link href="/partenariats" className="text-sm font-medium hover:text-primary transition-colors">
+              Partenariats
+            </Link>
+            <Link href="/temoignages" className="text-sm font-medium hover:text-primary transition-colors">
+              Témoignages
+            </Link>
+            <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
+              Blog
             </Link>
           </nav>
 
@@ -118,17 +116,40 @@ export function Header() {
             <Link href="/" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
               Accueil
             </Link>
-            <Link href="/about" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
-              À propos
+            <div className="px-4 py-2">
+              <p className="text-sm font-medium mb-2">Qui sommes nous</p>
+              <div className="pl-4 flex flex-col gap-1">
+                <Link href="/about/presentation" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Présentation de la marque
+                </Link>
+                <Link href="/about/histoire" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Histoire
+                </Link>
+                <Link href="/about/valeurs" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Valeurs
+                </Link>
+                <Link href="/about/expertises" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Expertises
+                </Link>
+                <Link href="/about/equipe" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Équipe
+                </Link>
+                <Link href="/about/chiffres" className="px-2 py-1 text-sm hover:bg-accent rounded-md">
+                  Agence en chiffres
+                </Link>
+              </div>
+            </div>
+            <Link href="/realisations" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
+              Réalisations
             </Link>
-            <Link href="/products" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
-              Carrelage
+            <Link href="/partenariats" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
+              Partenariats
             </Link>
-            <Link href="/sanitary" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
-              Sanitaire
+            <Link href="/temoignages" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
+              Témoignages
             </Link>
-            <Link href="/contact" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
-              Contact
+            <Link href="/blog" className="px-4 py-2 text-sm font-medium hover:bg-accent rounded-md">
+              Blog
             </Link>
           </nav>
         </div>
