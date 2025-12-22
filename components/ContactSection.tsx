@@ -9,7 +9,7 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             CONTACTEZ NOS ÉQUIPES
             <br />
-            POUR PLUS D'INFORMATIONS.
+            POUR PLUS D&apos;INFORMATIONS.
           </h2>
         </div>
 

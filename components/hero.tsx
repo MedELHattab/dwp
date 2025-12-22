@@ -18,7 +18,7 @@ export function Hero() {
 
       <div className="container relative z-10 text-center text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-          Un univers d'inspiration
+          Un univers d&apos;inspiration
           <br />
           et de possibilités
         </h1>
