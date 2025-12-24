@@ -1,4 +1,4 @@
-@import "tailwindcss";
+  @import "tailwindcss";
 @import "tw-animate-css";
 @import "leaflet/dist/leaflet.css";
 
@@ -133,6 +133,18 @@
 .bg-auth {
   background-image: url("/bg-cover-login.jpg");
   background-size: cover;
+}
+
+/* Global smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {

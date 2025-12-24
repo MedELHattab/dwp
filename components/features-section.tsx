@@ -27,6 +27,14 @@ const features = [
   },
 ]
 
+const partnerImages = [
+  "lamatem.png",
+  "OFPPT.png",
+  "PWC.png",
+  "Sans-titre-1.png",
+  "STFA.png",
+]
+
 export function FeaturesSection() {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
@@ -82,6 +90,35 @@ export function FeaturesSection() {
             )
           })}
         </div>
+
+        {/* Continuous partners slider */}
+        <div className="mt-12">
+          <div className="overflow-hidden">
+            <div className="flex marquee items-center">
+              {[...partnerImages, ...partnerImages].map((img, idx) => (
+                <img
+                  key={idx}
+                  src={`/partenaire/${img}`}
+                  alt={`partenaire-${idx}`}
+                  className="h-16 mx-8 object-contain inline-block"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <style jsx>{`
+          .marquee {
+            gap: 2rem;
+            animation: marquee 20s linear infinite;
+            will-change: transform;
+          }
+
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
       </div>
     </section>
   )
