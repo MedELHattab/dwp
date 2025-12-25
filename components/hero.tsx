@@ -30,16 +30,16 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative bg-[#fffef2] overflow-hidden">
+    <section className="relative bg-[#fffef2] overflow-hidden overflow-x-hidden">
       {/* Hero Text Section */}
       <div className="container mx-auto px-6 py-20 md:py-32">
-        <div className="max-w-6xl">
+        <div className="max-w-[1200px] w-full mx-auto">
           {/* Large Typography */}
           <h1 className="text-[#1f3630] font-bold leading-[0.95] mb-8">
-            <span className="block text-6xl md:text-8xl lg:text-9xl">
+            <span className="block text-[clamp(3rem,8vw,9rem)]">
               Your Ideas,
             </span>
-            <span className="block text-6xl md:text-8xl lg:text-9xl">
+            <span className="block text-[clamp(3rem,8vw,9rem)]">
               Our Creative{" "}
               <span className="italic font-normal">Twist</span>
             </span>

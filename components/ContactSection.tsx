@@ -76,7 +76,7 @@ export function ContactSection() {
           <Card className="bg-white border-none shadow-2xl">
             <CardContent className="p-8 md:p-10">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1f3630] mb-4">
-                Get a Free Estimate
+                Demandez un devis gratuit
               </h2>
               <p className="text-[#1f3630]/70 mb-8 leading-relaxed">
                 Contactez-nous immédiatement pour obtenir un devis personnalisé de l&apos;un de nos conseillers. Appelez-nous ou remplissez le formulaire ci-dessous !
@@ -87,21 +87,21 @@ export function ContactSection() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      NAME
+                      NOM
                     </label>
                     <input
                       type="text"
-                      placeholder="Jane Smith"
+                      placeholder="Votre nom"
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      PHONE
+                      TÉLÉPHONE
                     </label>
                     <input
                       type="tel"
-                      placeholder="(123) 456-7890"
+                      placeholder="06 12 34 56 78"
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     />
                   </div>
@@ -110,11 +110,11 @@ export function ContactSection() {
                 {/* Email */}
                 <div>
                   <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                    EMAIL
+                    E-MAIL
                   </label>
                   <input
                     type="email"
-                    placeholder="jane@framer.com"
+                    placeholder="votre@email.com"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   />
                 </div>
@@ -122,73 +122,17 @@ export function ContactSection() {
                 {/* Project Type */}
                 <div>
                   <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                    PROJECT TYPE
+                    TYPE DE PROJET
                   </label>
                   <select className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all appearance-none cursor-pointer">
-                    <option>Select...</option>
+                    <option>Sélectionner...</option>
                     <option>Résidentiel</option>
                     <option>Commercial</option>
                     <option>Bureaux</option>
                     <option>Architecture</option>
                   </select>
                 </div>
-
-                {/* Location, Budget, Project Size */}
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      LOCATION
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="City, State"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      BUDGET
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Enter your budget"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      PROJECT SIZE (M²)
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="e.g., 150"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    />
-                  </div>
-                </div>
-
-                {/* Dates */}
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      PREFERRED START DATE
-                    </label>
-                    <input
-                      type="date"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-[#1f3630] uppercase tracking-wider mb-2">
-                      DESIRED COMPLETION DATE
-                    </label>
-                    <input
-                      type="date"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    />
-                  </div>
-                </div>
-
+               
                 {/* Submit Button */}
                 <Button
                   type="submit"

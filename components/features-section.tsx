@@ -64,11 +64,11 @@ export function FeaturesSection() {
             return (
               <Card
                 key={feature.id}
-                className="group relative overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                className="group relative overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full transition-all duration-500 group-hover:w-full group-hover:h-full" />
 
-                <div className="relative p-8">
+                <div className="relative p-8 h-full flex flex-col">
                   <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-500">
                     <Icon className="h-8 w-8 text-primary group-hover:text-white transition-colors duration-500" />
                   </div>
@@ -77,7 +77,7 @@ export function FeaturesSection() {
                     {feature.title}
                   </h3>
 
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-muted-foreground leading-relaxed mb-6 flex-1">
                     {feature.description}
                   </p>
 
